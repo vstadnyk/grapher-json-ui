@@ -1,0 +1,48 @@
+{
+	"name": "grapher-json-ui",
+	"version": "1.0.0",
+	"description": "Simple Vue component with basic GUI to print and/or edit JSON data",
+	"main": "dist/index.umd.js",
+	"module": "dist/index.common.js",
+	"unpkg": "dist/index.min.js",
+	"browser": {
+		"./sfc": "src/index.vue"
+	},
+	"files": [
+		"src",
+		"dist/*.js",
+		"dist/*.css"
+	],
+	"repository": "https://github.com/vstadnyk/grapher-json-ui.git",
+	"keywords": [
+		"vue",
+		"component",
+		"json",
+		"viewer",
+		"editor"
+	],
+	"author": "Volodymyr Stadnyk <namirif@gmail.com>",
+	"license": "MIT",
+	"homepage": "https://github.com/vstadnyk/grapher-json-ui",
+	"scripts": {
+		"lint": "vue-cli-service lint",
+		"build": "vue-cli-service build --target lib --name index 'src/index.vue'"
+	},
+	"dependencies": {
+		"vue": "^2.6.5"
+	},
+	"devDependencies": {
+		"@vue/cli-plugin-babel": "^3.4.0",
+		"@vue/cli-plugin-eslint": "^3.4.0",
+		"@vue/cli-service": "^3.4.0",
+		"@vue/eslint-config-airbnb": "^4.0.0",
+		"babel-eslint": "^10.0.1",
+		"eslint": "^5.13.0",
+		"eslint-config-prettier": "^4.1.0",
+		"eslint-plugin-prettier": "^3.0.1",
+		"eslint-plugin-vue": "^5.1.0",
+		"prettier": "^1.16.4",
+		"vue-template-compiler": "^2.6.8",
+		"webpack": "^4.29.3"
+	}
+}

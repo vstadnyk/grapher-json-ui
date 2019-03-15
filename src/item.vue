@@ -115,8 +115,8 @@ export default {
 
 			if (!brackets) return ''
 
-			if (type === 'array' || (isArray && left === undefined)) return '['
-			if (type === 'object' || (!isArray && left === undefined)) return '{'
+			if (type === 'array' || (isArray && left === undefined)) return ' ['
+			if (type === 'object' || (!isArray && left === undefined)) return ' {'
 
 			return ''
 		}

@@ -2,6 +2,8 @@
 
 Simple Vue component with basic GUI to print and/or edit JSON data.
 
+[Demo](https://vstadnyk.github.io/grapher-json-ui-example/)
+
 ## Install
 
 ```bash

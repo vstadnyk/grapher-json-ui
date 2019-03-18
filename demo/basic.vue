@@ -1,6 +1,6 @@
 <template>
 	<main>
-		<h1>{{ title }}</h1>
+		<h1>Grapher json ui demo</h1>
 		<section>
 			<div>
 				<fieldset>
@@ -41,10 +41,6 @@ export default {
 		brackets: true,
 		comma: true,
 		updated: false,
-		title: window.document.title
-			.split('')
-			.map((w, i) => (!i ? w.toUpperCase() : w))
-			.join(''),
 		data: {
 			isActive: true,
 			picture: 'http://placehold.it/32x32',

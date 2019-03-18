@@ -1,5 +1,5 @@
 <template>
-	<ul v-if="data">
+	<ul v-if="data" class="grapher-json-ui">
 		<li v-if="isRoot"><item v-model="data" /></li>
 		<li
 			v-for="([field, value], i) in Object.entries(data)"
@@ -31,6 +31,8 @@
 
 <script>
 import Item from './item.vue'
+
+import './index.css'
 
 export default {
 	name: 'grapher-json-ui',
@@ -104,19 +106,3 @@ export default {
 	}
 }
 </script>
-
-<style scoped>
-.scroll {
-	overflow: auto;
-}
-ul {
-	margin: 0;
-	padding: 0;
-}
-li {
-	display: block;
-}
-.tab {
-	padding-left: 20px;
-}
-</style>

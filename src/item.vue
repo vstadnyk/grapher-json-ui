@@ -148,34 +148,3 @@ export default {
 	}
 }
 </script>
-
-<style scoped>
-*[contenteditable]:empty {
-	min-width: 1px;
-	display: inline-block;
-}
-.item {
-	display: block;
-	padding: 3px 0;
-	display: flex;
-	justify-content: space-between;
-}
-.string {
-	color: seagreen;
-}
-.number {
-	color: darkorange;
-}
-.email {
-	color: goldenrod;
-}
-.boolean {
-	color: royalblue;
-}
-.null {
-	color: royalblue;
-}
-.url {
-	color: cornflowerblue;
-}
-</style>

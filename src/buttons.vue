@@ -1,5 +1,5 @@
 <template>
-	<span>
+	<span class="buttons">
 		<button
 			v-for="(type, i) in list.filter(r => r)"
 			:key="i"
@@ -25,23 +25,3 @@
 <script>
 export default { props: { list: Array } }
 </script>
-
-<style scoped>
-span {
-	display: flex;
-}
-button {
-	cursor: pointer;
-	text-align: center;
-	font-family: inherit;
-	border: 0;
-	padding: 0;
-	width: 20px;
-	height: 20px;
-	background-color: transparent;
-	opacity: 0.4;
-}
-button:hover {
-	opacity: 0.8;
-}
-</style>

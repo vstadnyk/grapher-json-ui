@@ -1,0 +1,124 @@
+ul.grapher-json-ui {
+	margin: 0;
+	padding: 0;
+}
+.grapher-json-ui li {
+	display: block;
+}
+.grapher-json-ui .tab {
+	padding-left: 20px;
+}
+.grapher-json-ui .item *[contenteditable]:empty {
+	min-width: 1px;
+	display: inline-block;
+}
+.grapher-json-ui .item {
+	display: block;
+	padding: 3px 0;
+	display: flex;
+	justify-content: space-between;
+}
+.grapher-json-ui .string {
+	color: seagreen;
+}
+.grapher-json-ui .number {
+	color: darkorange;
+}
+.grapher-json-ui .email {
+	color: goldenrod;
+}
+.grapher-json-ui .boolean {
+	color: royalblue;
+}
+.grapher-json-ui .null {
+	color: royalblue;
+}
+.grapher-json-ui .url {
+	color: cornflowerblue;
+}
+.grapher-json-ui .item .buttons {
+	display: flex;
+}
+.grapher-json-ui .buttons button {
+	cursor: pointer;
+	text-align: center;
+	font-family: inherit;
+	border: 0;
+	padding: 0;
+	width: 20px;
+	height: 20px;
+	background-color: transparent;
+	opacity: 0.4;
+}
+.grapher-json-ui .buttons button:hover {
+	opacity: 0.8;
+}
+.grapher-json-ui .form {
+	display: block;
+	background-color: whitesmoke;
+	padding: 15px;
+	border: 1px solid #ccc;
+}
+.grapher-json-ui .form label {
+	display: block;
+	margin: 15px 0;
+}
+.grapher-json-ui .form input.error {
+	border-color: red;
+}
+.grapher-json-ui .form .flex {
+	display: flex;
+	justify-content: space-between;
+}
+.grapher-json-ui .form .bottom {
+	margin-top: 15px;
+}
+.grapher-json-ui .form .top label {
+	margin: 0;
+}
+.grapher-json-ui .form span.error {
+	display: block;
+	color: red;
+}
+.grapher-json-ui .form input,
+.grapher-json-ui .form select,
+.grapher-json-ui .form option,
+.grapher-json-ui .form button {
+	font-size: inherit;
+	font-family: inherit;
+	border: 0;
+	appearance: none;
+	border-radius: 0;
+	background: white;
+}
+.grapher-json-ui .form input,
+.grapher-json-ui .form select {
+	padding: 7px;
+	border: 1px solid #ccc;
+}
+.grapher-json-ui .form input {
+	width: calc(100% - 16px);
+}
+.grapher-json-ui .form select {
+	width: auto;
+	padding-right: 22px;
+	background-position: 100% 50%;
+	background-repeat: no-repeat;
+	background-size: 20px;
+	background-image: url("data:image/svg+xml, %3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24'%3E%3Cpath d='M7.406 7.828l4.594 4.594 4.594-4.594 1.406 1.406-6 6-6-6z'%3E%3C/path%3E%3C/svg%3E");
+}
+.grapher-json-ui .form button {
+	cursor: pointer;
+	background-color: #ccc;
+	padding: 7px 15px;
+}
+.grapher-json-ui .form button:hover {
+	background-color: #eee;
+}
+.grapher-json-ui .form .submit {
+	background-color: teal;
+	color: whitesmoke;
+}
+.grapher-json-ui .form .submit:hover {
+	background: rgba(0, 128, 128, 0.7);
+}
